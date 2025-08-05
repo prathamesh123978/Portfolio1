@@ -1,0 +1,247 @@
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+header:hover {
+    background-color: #222;
+    color: #ffcc00;
+    transform: scale(1.02);
+}
+
+/* Navigation Bar */
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Main Container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+/* Spacing for paragraphs */
+.container p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Timeline Section */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+/* Timeline Event Box */
+.timeline-event {
+    background: #f8f9fa;
+    border-left: 4px solid #ffcc00;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 0.8s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.timeline-event h3 {
+    margin: 0;
+    color: #333;
+}
+
+.timeline-event p {
+    margin: 5px 0 0;
+    font-size: 0.95em;
+}
+
+/* Hover Effect */
+.timeline-event:hover {
+    background-color: #ffcc00;
+    color: #222;
+    transform: scale(1.02);
+}
+
+/* Animation for Timeline Events */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Image Styling */
+.timeline-event img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    float: right;
+    margin-left: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.timeline-event img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+footer:hover {
+    background-color: #222;
+    color: #ffcc00;
+}
+/* Gallery Images */
+.container img {
+    width: 150px;  /* Smaller size */
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container img:hover {
+    transform: scale(1.1);
+}
+
+/* Gallery Video */
+.container video {
+    width: 300px;  /* Reduced width */
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container video:hover {
+    transform: scale(1.05);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+form:hover {
+    transform: scale(1.02);
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+/* Home Image - Make it Bigger */
+.home-image {
+    width: 100%;  /* Full width */
+    max-width: 600px;  /* Bigger size */
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.home-image:hover {
+    transform: scale(1.05);
+}
+
+/* Fix Gallery Video Overflow */
+.container video {
+    max-width: 100%;  /* Prevents overflow */
+    width: 300px;  /* Reduced width */
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container video:hover {
+    transform: scale(1.05);
+}
